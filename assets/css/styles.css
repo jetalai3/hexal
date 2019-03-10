@@ -1,0 +1,546 @@
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url("../fonts/MavenPro-Regular.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Lato-Black";
+    src: url("../fonts/Lato-Black.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../fonts/MyriadPro-Regular.ttf") format("truetype"); 
+}
+body {
+    background-color: #ffffff;
+    width: 1020px;
+    height: 1732px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #323232;
+    height: 3.637%;
+    margin: 0 auto;
+}
+
+main{
+    height: 61.32%;
+    margin: 0 auto;
+}
+.navigation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bottom {
+    height: 7.08%;
+    background-color: #222222;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-family: "MavenPro-Regular", "MyriadPro-Regular";
+    font-size: 8.65655pt;
+    color: rgba(69, 69, 69, 255);
+    text-align: justify;
+    padding: 15px 0px 0px 39px;
+    letter-spacing: 0em;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.crop {
+	position: relative;
+	width: 182px;
+	height: 209px;
+	border: none;
+    margin: 0 auto;
+
+}
+
+.crop img {
+	margin: 0;
+	position: absolute;
+	top: -180px;
+	left: 1px;
+    clip: rect(120px 135px 209px 43px);
+}
+
+.navigation ul {
+    position: absolute;
+    margin: 0 301px;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    z-index: 2;
+}
+
+.navigation ul li a {
+    font-family: "Lato-Bold", "MyriadPro-Regular";
+    font-size: 7.21379pt;
+    text-align: justify;
+}
+
+li {
+    float: left;
+}
+
+.point-1, .point-2 {
+    display: block;
+    padding: 0px 0px 0px 0px;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    background-color: #484c5f;
+}
+
+.point-1 {
+    margin: 36px -14px 0px 12px;   
+}
+
+.point-2 {
+    margin: 36px -12px 0px 8px;  
+}
+
+li a {
+    display: block;
+    text-align: justify;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 7.21379pt;
+    font-family: "Lato-Bold", "MyriadPro-Regular";
+}
+
+.navigation-item {
+    padding: 14px 5px 14px 15px;
+    margin: 17px -3px 17px 10px;
+}
+
+li a:hover:not(.active) {
+    color: rgba(46, 179, 152, 255);
+}
+
+li .logo {
+    padding: 0px 14px;
+    margin: 10px 0px 10px 20px;
+}
+
+.hexagon-cont {
+    position: relative;
+    height: 67.89%;
+}
+
+.line {
+    position: absolute;
+    top: 13px;
+    width: 410px; 
+    right: 30px;
+    height: 1px;
+    background-color: #e4e9eb;
+}
+
+.line:first-child {
+    left: 30px;
+}
+
+.line:last-child {
+    right:30px;
+}
+
+.hexagon-cont::after {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background-color: #e4e9eb;
+    content: '';
+}
+
+.hexagon-cont::after {
+    bottom: 11px;
+}
+
+.hexagon-line1 {
+    position: absolute;
+    top: 83px;
+    margin-left: 101px;
+    padding: 0px 12px;
+}
+
+.hexagon-line2 {
+    position: absolute;
+    top: 251px;
+    margin-left: 13px;
+}
+
+.hexagon-line3 {
+    position: absolute;
+    top: 419px;
+    margin-left: 101px;
+    padding: 0px 12px;
+}
+
+.hexagon {
+    width: 180px;
+    height: 209px;
+    margin: 6px 10px 6px 6px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hex-layer-1 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #6c6c6c;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.hex-layer-2.img-moved {
+    background-image: url("../images/Layer14@1X.png");
+    background-position:-19px -17px;
+    background-repeat: no-repeat;
+}
+
+.hexagon-slider {
+    position: absolute;
+    bottom: 23px;
+    left: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+}
+
+.hexagon-slider-item {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    background-color: #ddd2c5;
+}
+  
+.hexagon-slider-item.active, .hexagon-slider-item:hover {
+    background-color: #8b8784;
+    cursor: pointer;
+}
+
+.info {
+    background-color: #2eb398;
+    height: 341px;
+    position: relative;
+    padding-right: 98px;
+    padding-left: 98px;
+    display: flex;
+}
+
+.info::before, .info::after {
+    position: absolute;
+    top: 13px;
+    bottom: 12px;
+    width: 1px;
+    background-color: #219d84;
+    content: '';
+}
+
+.info::before {
+    left: 98px;
+}
+
+.info::after {
+    right: 98px;
+}
+
+.hexagon-line::before, .hexagon-line::after {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    width: 1px;
+    background-color: #e4e9eb;
+    content: '';
+}
+
+.hexagon-line::before {
+    left: 100%;
+}
+
+.hexagon-line::after {
+    right: 100%;
+}
+
+.footer-section {
+    position: relative;
+}
+
+.footer-section::before, .footer-section::after {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background-color: #2b2b2b;
+    content: '';
+}
+
+.footer-section::before {
+    top: 13px;
+}
+
+.footer-section::after {
+    bottom: 33px;
+}
+
+
+.info .hexagon  {
+    background-position: 50%;
+    margin: 67px 0px 0px 23px
+}
+
+.info .hexagon img {
+    width: 424px;
+    height: 207px;
+    margin: 0px -121px;
+}
+
+.info-article {
+    width: 70.6%;
+    padding: 64px 0px 0px 17px;
+}
+
+.name {
+    margin: 0;
+    font-size: 22pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    font-family: "MavenPro-Regular", "MyriadPro-Regular";
+}
+
+.profession {
+    margin: 0;
+    font-size: 14pt;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+    font-family: "MavenPro-Regular", "MyriadPro-Regular";
+    letter-spacing: -0.01em;
+    word-spacing: -0.1em;
+    padding-top: 2px;
+}
+
+.about-me {
+    font-size: 9pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    font-family: "Lato-Regular", "MyriadPro-Regular";
+    padding-top: 16px;
+    line-height: 1.9em;
+}
+
+.info-social {
+    position: absolute;
+    top: 73%;
+    left: 73.8%;
+    display: flex;
+}
+
+.info-social-item {
+    height: 24px;
+    width: 24px;
+}
+
+.info-social-item:nth-child(2n+1) {
+    width: 25px;
+}
+
+.info-social-item-facebook {
+    background-image: url('../images/facebook.png')
+}
+
+.info-social-item-facebook:hover {
+    background-image: url('../images/Facebook@1X.png')
+}
+
+.info-social-item-twitter {
+    background-image: url('../images/twitter.png')
+}
+
+.info-social-item-twitter:hover {
+    background-image: url('../images/Twitter@1X.png')
+}
+
+.info-social-item-plus-google {
+    background-image: url('../images/google.png');
+}
+
+.info-social-item-plus-google:hover {
+    background-image: url('../images/Google@1X.png');
+}
+
+.info-social-item-pinterest {
+    background-image: url('../images/pinterest.png')
+}
+
+.info-social-item-pinterest:hover {
+    background-image: url('../images/Pinterest@1X.png')
+}
+
+.info-social-item-linkedin {
+    background-image: url('../images/linkedin.png')
+}
+
+.info-social-item-linkedin:hover {
+    background-image: url('../images/Linkedin@1X.png')
+}
+
+.info-social-item-dribble {
+    background-image: url('../images/dribble.png')
+}
+
+.info-social-item-dribble:hover {
+    background-image: url('../images/Dribbble@1X.png')
+}
+
+footer {
+    position: relative;
+    background-color: #323232;
+    height: 35.05%;
+}
+
+h2 {
+    font-family: "MavenPro-Regular", "MyriadPro-Regular";
+    font-size: 22pt;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    word-spacing: 0.11em;
+}
+
+footer p {
+    font-size: 13pt;
+    color: #bebebe;
+    text-align: justify;
+    font-family: "MavenPro-Regular", "MyriadPro-Regular";
+    padding-top: 3px;
+    letter-spacing: 0.019em;
+}
+
+.get-in-touch {
+    padding-top: 6.18%;
+    padding-bottom: 12.5%;
+    margin-left: 11.75%;
+    width: 580px;
+}
+
+.touch-form {
+    width: 100%;
+    margin-top: 3.6%;
+}
+
+
+.touch-form input::placeholder, textarea::placeholder {
+    color: #bebebe;
+    font-size: 9pt;
+}
+
+.touch-form input, textarea {
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: #454545;
+    text-indent: 2.7%;
+    font-family: "Lato-Regular", "MyriadPro-Regular";
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.touch-form .send {
+    float: right;
+    width: 90px;
+    height: 37px;
+    background-color: #2eb398;
+    font-family: "Lato-Bold", "MyriadPro-Regular";
+    font-size: 8pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: center;
+}
+
+.touch-form input {
+    height: 38px;
+}
+
+.touch-form textarea {
+    height: 141px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+    resize: none;
+}
+
+.inform {
+    position: absolute;
+    left: 70.5%;
+    top: 21.5%;
+    width: 17.7%;
+    font-family: "Lato-Regular", "MyriadPro-Regular";
+    font-size: 8pt;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    line-height: 2em;
+    word-spacing: 0.35em;
+}
+
+.inform span {
+    font-family: "Lato-Black", "Lato-Regular", "MyriadPro-Regular";
+}
+
+.contacts {
+    position: absolute;
+    left: 70.5%;
+    top: 50.5%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-family: "Lato-Bold", "MyriadPro-Regular";
+    font-size: 9pt;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    padding-bottom: 9px;
+}
+.contacts a i {
+    padding-right: 14px;
+    color: #2eb398;
+}
